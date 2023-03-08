@@ -1,10 +1,19 @@
 package basicjava;
 
+import java.util.Scanner;
+
 public class BasicJavaClass {
 	public static void main(String[] args) {
-		String name="Vasanth";
-		int age=21;
-		float height=(float)178.5;  //178.5f -> typecasting
+		String name;
+		int age;
+		float height;  //178.5f -> typecasting
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter your name: ");
+		name=sc.nextLine();
+		System.out.println("Enter your age: ");
+		age=sc.nextInt();
+		System.out.println("Enter your height: ");
+		height=sc.nextFloat();
 		
 		System.out.println("Hello World");
 		System.out.println("Name: "+name);
