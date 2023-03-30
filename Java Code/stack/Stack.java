@@ -19,7 +19,7 @@ public class Stack {
 			System.out.println("Stack is full");
 			return;
 		}
-		arr[++top]=data;
+		arr[++top]=data; // top++; arr[top]=data
 	}
 	
 	public void pop()
